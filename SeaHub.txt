@@ -1,4 +1,4 @@
-do local GUI = game.CoreGui:FindFirstChild("SOMEXHUB");if GUI then GUI:Destroy();end;if _G.Color == nil then
+do local GUI = game.CoreGui:FindFirstChild("Wbmx Hub");if GUI then GUI:Destroy();end;if _G.Color == nil then
        _G.Color = Color3.fromRGB(35,21,233)
    end 
 end
@@ -59,7 +59,7 @@ end
 
 function Notification(text)
 game.StarterGui:SetCore("SendNotification", {
-  Title = "Sea Hub"; -- the title (ofc)
+  Title = "Wbmx Hub"; -- the title (ofc)
   Text = text; -- what the text says (ofc)
   Icon = "rbxassetid://85703763384134"; -- the image if u want.
   Duration = 3; -- how long the notification should in secounds
@@ -75,14 +75,14 @@ function Update:Window(text,logo,keybind)
 	local keybind = keybind or Enum.KeyCode.RightControl
 	local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
 	
-	local SOMEXHUB = Instance.new("ScreenGui")
-	SOMEXHUB.Name = "SOMEXHUB"
-	SOMEXHUB.Parent = game.CoreGui
-	SOMEXHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	local Wbmx Hub = Instance.new("ScreenGui")
+	Wbmx Hub.Name = "Wbmx Hub"
+	Wbmx Hub.Parent = game.CoreGui
+	Wbmx Hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local Main = Instance.new("Frame")
 	Main.Name = "Main"
-	Main.Parent = SOMEXHUB
+	Main.Parent = Wbmx Hub
 	Main.Active = true
 	Main.ClipsDescendants = true
 	Main.AnchorPoint = Vector2.new(0.5,0.5)
@@ -125,7 +125,7 @@ Top.ZIndex = 2
 	Name.Position = UDim2.new(0.107756112, 0, 0, 0)
 	Name.Size = UDim2.new(0, 50, 0, 27)
 	Name.Font = Enum.Font.GothamSemibold
-	Name.Text = "Sea Hub"
+	Name.Text = "Wbmx Hub"
 	Name.TextColor3 = Color3.fromRGB(35, 21, 233)
 	Name.TextSize = 17.000
 
@@ -9513,7 +9513,7 @@ wait(1);
 
 Notify({
 Description = "There are no devil fruits left.";
-Title = "Sea Hub";
+Title = "Wbmx Hub";
 Duration = 5;
 });
 						end
@@ -10538,8 +10538,8 @@ end)
     end)
     
     Misc:Button("Destroy Ui",function()
-        if game.CoreGui:FindFirstChild("Sea Hub") then
-            game.CoreGui:FindFirstChild("Sea Hub"):Destroy()
+        if game.CoreGui:FindFirstChild("Wbmx Hub") then
+            game.CoreGui:FindFirstChild("Wbmx Hub"):Destroy()
             game.CoreGui:FindFirstChild("PADOXHUBMODILE"):Destroy()
         end
     end)
